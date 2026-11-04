@@ -29,6 +29,7 @@ namespace TaskTracker.UI
                 Console.ReadKey();
             }
         }
+
         public void Run()
         {
             // Загружаем сохранённые задачи при старте
@@ -79,7 +80,7 @@ namespace TaskTracker.UI
                     case 5:
                         ShowStatistics();
                         break;
-                    case 6:                    // было 5, стало 6
+                    case 6:
                         storage.SaveTasks(taskService.GetAllTasks());
                         running = false;
                         Console.WriteLine("Задачи сохранены. До свидания!");
